@@ -45,7 +45,7 @@ script:
   #- make ARCH=arm64 -j16 clean mrproper
 
 after_success:
-  - curl --upload-file arch/arm64/boot/zImage https://transfer.sh/condor_VIVO_XL2_V0070_MT6737T_kernel
+  - curl --upload-file arch/arm/boot/zImage https://transfer.sh/condor_VIVO_XL2_V0070_MT6737T_kernel
   
 deploy:
   skip_cleanup: true
