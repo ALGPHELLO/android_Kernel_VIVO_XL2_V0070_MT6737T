@@ -32,14 +32,14 @@ script:
   
   - KERNEL_DIR=$PWD/android_Kernel_VIVO_XL2_V0070_MT6737T
   - ZIMAGE=$KERNEL_DIR/arch/arm64/boot/zImage
-  - mkdir -p out
-  - make O=out clean
-  - make O=out mrproper
-  - make O=out gionee6737t_66_m0_defconfig
-  - make O=out -j16
-  #- make gionee6737t_66_m0_defconfig 
+  #- mkdir -p out
+  #- make O=out clean
+  #- make O=out mrproper
+  #- make O=out gionee6737t_66_m0_defconfig
+  #- make O=out -j16
+  - make gionee6737t_66_m0_defconfig 
   #- bash build.sh
-  #- make -j16
+  - make -j16
   #- make ARCH=arm64 -j16 clean mrproper
 
 after_success:
