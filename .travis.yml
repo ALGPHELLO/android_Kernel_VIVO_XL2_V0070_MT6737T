@@ -56,7 +56,3 @@ deploy:
     tags: true
     repo: ALGPHELLO/android_Kernel_VIVO_XL2_V0070_MT6737T
     branch: Nougat
-
-branches:
-  except:
-    - /^(?i:untagged)-.*$/
